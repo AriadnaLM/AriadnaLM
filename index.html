@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang= "ES">
+<head> 
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="index.js"></script>
+<title>Acceso a mi Web</title> </head>
+<body> 
+<form id="formulario" onsubmit="return validarFormulario()">
+     <h1>Create Account</h1>
+  <div>
+    <label for="nombre">Nombre:</label><br>
+    <input type="text" id="nombre" name="nombre" required pattern="[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]+" /><br>
+    <span id="errorNombre"></span>
+  </div><br>
+  <div>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email"><br>
+    <span id="errorEmail"></span>
+  </div><br>
+  <div>
+    <label for="clave">Clave:</label><br>
+    <input type="password" id="clave" name="clave" required minlength="8" /><br>
+    <span id="errorClave"></span>
+  </div><br>
+  <div>
+    <label for="confirmarClave">Confirme su clave:</label><br>
+    <input type="password" id="confirmarClave" name="confirmarClave" required minlength="8" /><br>
+    <span id="errorConfirmarClave"></span>
+  </div><br>
+  <button type="submit">Enviar</button>
+</form>
+<script src="index.js"></script>
+</body>
+</html>
+
+
